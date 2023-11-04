@@ -33,6 +33,8 @@ $ docker build . --tag=runtime
 
 # Build a function package - see package/crossplane.yaml
 $ crossplane xpkg build -f package --embed-runtime-image=runtime
+
+test
 ```
 
 [functions]: https://docs.crossplane.io/latest/concepts/composition-functions
