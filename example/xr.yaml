@@ -1,0 +1,6 @@
+apiVersion: example.crossplane.io/v1
+kind: XSecurityRules
+metadata:
+  name: example-securityrule
+spec:
+  nsgName: nsg-alfred-dev

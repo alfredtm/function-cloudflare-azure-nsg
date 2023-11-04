@@ -1,0 +1,13 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: Composition
+metadata:
+  name: create-buckets
+spec:
+  compositeTypeRef:
+    apiVersion: example.crossplane.io/v1
+    kind: XSecurityRules
+  mode: Pipeline
+  pipeline:
+    - step: cloudflare-ip-nsg
+      functionRef:
+        name: function-xsecurityrules
